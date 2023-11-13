@@ -1,0 +1,45 @@
+/* 
+----------------------------------------
+COMPONENTS
+----------------------------------------
+*/
+.btn {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: $space-s $space-xs;
+  width: 100%;
+  margin: 0 auto;
+  font-size: $font-m;
+  font-weight: $font-w700;
+  text-transform: capitalize;
+  border-radius: $border-radius-f;
+  line-height: 1;
+  letter-spacing: 0.05rem;
+  cursor: pointer;
+}
+
+//Button primary
+.btn-primary {
+  color: $white;
+  background-color: $blue;
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(
+    to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    z-index: -1;
+    border-radius: $border-radius-f;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+  }
+  
+  &:hover::before {
+    opacity: 1;
+  }
+}
