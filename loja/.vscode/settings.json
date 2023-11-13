@@ -1,0 +1,6 @@
+{
+  "prettier.bracketSameLine": false,
+  "prettier.bracketSpacing": false,
+  "prettier.htmlWhitespaceSensitivity": "ignore",
+  "prettier.embeddedLanguageFormatting": "auto"
+}

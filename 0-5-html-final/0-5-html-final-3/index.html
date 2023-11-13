@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Card and Payment Sucessfull</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="card">
+        <div class="card__header">
+          <h4 class="text-primary text-m semibold">Payment Methods</h4>
+          <a class="text-accent text-xs bold" href="#">Edit</a>
+        </div>
+        <div class="card__content">
+          <div class="card__details">
+            <div class="card_detail active">
+              <img src="./assets/mastercard.png" alt="Mastercard Option" class="card__detail_img" />
+              <div class="card__blank_details">
+                <div class="card__blank_detail">
+                    <p class="text-m normal text-primary" >Mastercard: 5432</p>
+                    <p class="text-m normal text-secondary" >Exp. date:<span class="text-m semibold text-primary"> 12/20</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="card_detail">
+              <img src="./assets/visa.png" alt="Visa Option" class="card__detail_img" />
+              <div class="card__blank_details">
+                <div class="card__blank_detail">
+                    <p class="text-m normal text-primary" >Visa: 4291</p>
+                    <p class="text-m normal text-secondary" >Exp. date:<span class="text-m semibold text-primary"> 12/20</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+        <div class="card__actions">
+          <button type="button" class="btn btn_s btn_accent btn_f_width">Show More</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

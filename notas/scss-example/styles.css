@@ -1,0 +1,40 @@
+button {
+  background-color: red;
+}
+
+body {
+  font-size: 2rem;
+}
+
+html {
+  background: red;
+}
+
+h1 {
+  color: blue;
+}
+h1 span {
+  color: blue;
+}
+
+h1 span {
+  color: red;
+}
+
+h2 {
+  color: red;
+}
+
+.form__field {
+  width: 100%;
+}
+.form__field__label {
+  color: red;
+}
+.form__field ptexto {
+  color: red;
+}
+
+.card {
+  border-radius: 5px;
+}/*# sourceMappingURL=styles.css.map */

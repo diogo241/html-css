@@ -1,0 +1,45 @@
+@use "sass:math";
+@import "buttons";
+@import "typography";
+
+// Variáveis
+$warning: red;
+
+html {
+  background: $warning;
+}
+
+h1 {
+  // É um scope, é local
+  $warning: blue;
+  color: $warning;
+
+  span {
+    color: $warning;
+  }
+}
+
+h1 span {
+  color: $warning;
+}
+
+h2 {
+  color: $warning;
+}
+
+.form__field {
+  width: 100%;
+  &__label {
+    color: red;
+  }
+  p {
+    &texto {
+      color: red;
+    }
+  }
+}
+
+.card {
+  border-radius: math.div(20px, 4);
+}
+

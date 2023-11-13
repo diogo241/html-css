@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,300;0,400;1,500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'IBM Plex Sans', sans-serif;
+  background: linear-gradient(90deg, rgba(252,176,69,1) 0%, rgba(253,29,29,1) 50%, rgba(131,58,180,1) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  line-height: 1;
+  font-size: 62.5%;
+}
+
+:root {
+  --primary-color: #27272e;
+  --secondary-color: #8a8f93;
+  --grey-color: #e4ecf7;
+  --accent-color: #2b47b4;
+  --white-color: #fff;
+  --border-radius-s: 0.8rem;
+  --border-radius-m: 1.6rem;
+  --border-radius-f: 100rem;
+  --box-shadow-light: 0px 3px 0.8rem -1px rgba(50, 50, 71, 0.05),
+    0px 0px 1px 0px rgba(12, 26, 75, 0.24);
+  --box-shadow-medium: 0px 10px 20px 4px rgba(0, 0, 0, 0.4);
+  --space-xs: 0.8rem;
+  --space-s: 1.6rem;
+  --space-m: 2.4rem;
+  --space-l: 3.2rem;
+  --space-xl: 4rem;
+}
+
+main {
+  padding: 1rem 2rem;
+  width: 100%;
+  max-width: 1280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bg-accent {
+  background-color: var(--accent-color);
+}
+.bg-grey {
+  background-color: var(--grey-color);
+}
+
+.box-shadow-medium {
+  box-shadow: var(--box-shadow-medium);
+}
+
+.text-primary {
+  color: var(--primary-color);
+}
+.text-secondary {
+  color: var(--secondary-color);
+}
+.text-accent {
+  color: var(--accent-color);
+}
+.text-white {
+  color: var(--white-color);
+}
+
+.text-xs {
+  font-size: 1.2rem;
+}
+.text-s {
+  font-size: 1.4rem;
+}
+.text-m {
+  font-size: 1.6rem;
+}
+.text-l {
+  font-size: 2rem;
+}
+
+.normal {
+  font-weight: 400;
+}
+.medium {
+  font-weight: 500;
+}
+.semibold {
+  font-weight: 600;
+}
+.bold {
+  font-weight: 700;
+}
+.up{
+    text-transform: uppercase;
+}
+.letter-spacing-s {
+    letter-spacing: 0.3rem;
+}
+.letter-spacing-xl {
+    letter-spacing: 1rem;
+}
+.line-height-p {
+    line-height: 1.6;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    background: var(--white-color);
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--border-radius-s);
+    width: 100%;
+    max-width: 400px;
+    box-shadow: var(--box-shadow-medium);
+    /* overflow: hidden; */
+}
+
+.card__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(180deg, rgba(252,176,69,1) 0%, rgba(253,29,29,1) 50%);
+    width: 100%;
+    border-radius: var(--border-radius-s) var(--border-radius-s) 0px  0px;
+    gap: var(--space-m);
+}
+.card__main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-s);
+    width: 100%;
+}
+img.card__main-header-logo {
+    max-width: 50px;
+}
+
+.card__main-content {
+    width: 100%;
+}
+.card__main-content-text {
+    display: flex;;
+    align-items: flex-start;
+    width: 100%;
+    flex-direction: column;
+    gap: var(--space-m);
+    padding: var(--space-s);
+}
+.card__main-content-sub{
+    position: relative;
+}
+
+.card__main-content-sub-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 27rem;
+    overflow: hidden;
+    opacity: 0.5;
+    line-height: 1;
+}
+.card__main-content-shoes {
+    position: absolute;
+    top: 0rem;
+    left: 6rem;
+    max-width: 40rem;
+}
+.card__footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-s);
+    flex-direction: column;
+    padding: var(--space-m);
+    margin-top: var(--space-s);
+}
+.card__footer-btn {
+    position: relative;
+    z-index: 1;
+}
+.btn {
+    padding: var(--space-s) var(--space-xl);
+    color: var(--accent-color);
+    border-radius: var(--border-radius-f);
+    transition: all ease-in-out 0.2s;
+}
+.outline {
+    border: 2px solid var(--accent-color);
+}
+.outline:hover {
+    color: var(--white-color);
+    background: var(--accent-color);
+}
+
+
+
+.card {
+  -webkit-animation: rotate 5s linear infinite;
+  animation: rotate 5s linear infinite;
+}
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+  50% {
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+  }
+  100% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+}
